@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=vietnamese');
+/* ============================== DEFAULT HTML ============================== */
+html, body {
+	line-height: 1.7;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	font-size: 15px;
+	font-weight: 400;
+	overflow-x: hidden;
+	position: relative;
+	background: #fff;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main { 
+    display: block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+	color: #111;
+	font-weight: 400;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	text-decoration: none;
+	outline: none;
+	color: #007ee5;
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+		 -o-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+}
+a:hover {
+	color: #0060c7;
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+a img {
+	border: none;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.text-break {
+	word-break: break-word!important;
+	overflow-wrap: break-word!important;
+}
+.transition {
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+		 -o-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+}
+ul,li {
+	margin: 0;
+	padding: 0;	
+}
+ul {
+	list-style: none;
+}
+ul.hasIcon li {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 5px;
+}
+ul.hasIcon li i {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	font-size: 20px;
+	color: #037afe;
+}
+section {
+	padding: 50px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+section .sectionHeading {
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+section .title {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+section .title span {
+	font-weight: 700;
+	font-style: italic;
+}
+section .sectionTitle {
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+section.gradient {
+	padding: 0;
+	background: -webkit-linear-gradient(left, #8e2de2, #4a00e0);
+	background: -o-linear-gradient(left, #8e2de2, #4a00e0);
+	background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+section.gradient .inner {
+	padding: 50px 20px;
+	background: url(../images/cta_bg.png) no-repeat center center / cover;
+}
+ul.customStyle {
+	margin: 20px 0;
+}
+ul.customStyle li {
+	margin: 10px 0 10px 30px;
+	list-style: disc;
+}
+table.va-middle th,
+table.va-middle td {
+	vertical-align: middle;
+}
+.font-weight-medium {
+    font-weight: 500;
+}
+.btn-grad {
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+	padding: 12px 20px;
+	background: -webkit-linear-gradient(left, #8e2de2, #4a00e0);
+	background: -o-linear-gradient(left, #8e2de2, #4a00e0);
+	background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.btn-grad:hover {
+	color: #fff;
+}
+.table-bordered td, 
+.table-bordered th {
+	border: 1px solid rgba(222, 226, 230, 0.3);
+}
+.table {
+	background: -webkit-linear-gradient(left, #8e2de2, #4a00e0);
+	background: -o-linear-gradient(left, #8e2de2, #4a00e0);
+	background: linear-gradient(to right, #8e2de2, #4a00e0);
+	color: #fff;
+}
+.table thead th {
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid rgba(222, 226, 230, 0.3);
+}
+.table tbody th {
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+#content {
+	padding-top: 100px;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+header .navbar {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 20px 0;
+	box-shadow: 0 2px 15px #e6e6e6;
+	z-index: 2;
+}
+header .navbar-brand {
+	font-size: 26px;
+	padding: 0;
+	background: linear-gradient(90deg,#892ce2,#992283);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+header .navbar-toggler {
+	padding: 0;
+	border: none;
+	outline: none;
+}
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #1631A6;
+}
+/* =============== HOMEPAGE =============== */
+#banner {
+	color: #fff;
+	text-align: center;
+	margin: 50px 0 0;
+	padding: 0;
+	background: #010e29 url(../images/banner.jpg) no-repeat center center / contain;
+}
+#banner .inner {
+	padding: 100px 0;
+	background: rgba(3, 122, 254, 0.43);
+	background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+	background: linear-gradient(to right, rgba(231, 87, 241, 0.2), rgba(166, 28, 234, 0.2), rgba(3, 122, 254, 0.6));
+}
+#banner h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 50px;
+	margin: 0;
+}
+#banner h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+#banner img {
+	margin: 60px 0;
+}
+#benefit .box {
+	background: #010113;
+	color: #fff;
+	padding: 30px;
+}
+#benefit .box .sectionTitle {
+	text-align: center;
+	color: #fff;
+}
+#compare .customStyle {
+	margin: 0;
+}
+#compare .customStyle li:first-child {
+	margin-top: 0;
+}
+#compare .customStyle li:last-child {
+	margin-bottom: 0;
+}
+#process ul li .step {
+	font-weight: 700;
+}
+#downloadApp .promo {
+	color: #fff;
+	text-align: center;
+	padding: 0;
+	background: linear-gradient(236deg, rgb(203, 17, 109), rgb(156, 7, 59));
+}
+#downloadApp .promo .inner {
+	padding: 20px;
+	background: url(../images/cta_bg.png) no-repeat center center / cover;
+}
+#downloadApp .promoCode {
+	font-size: 35px;
+	font-weight: 500;
+	color: #ffd500;
+}
+#downloadApp .download {
+	background: rgba(255, 255, 255, 0.15);
+	padding: 20px 30px;
+}
+#testimonial {
+	padding-top: 70px;
+}
+#testimonial .item {
+	position: relative;
+	height: 100%;
+    color: #fff;
+    padding: 60px 25px 40px;
+    text-align: center;
+	background: #00b09b;
+	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+	background: linear-gradient(to right, #96c93d, #00b09b);
+}
+#testimonial .item.grad-1 {
+	background: #7F00FF;
+	background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+	background: linear-gradient(to right, #E100FF, #7F00FF);
+}
+#testimonial .item.grad-2 {
+	background: #fc4a1a;
+	background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+	background: linear-gradient(to right, #f7b733, #fc4a1a);
+}
+#testimonial .item:before {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	width: 40px;
+	height: 40px;
+	opacity: .7;
+	background: url(../images/quote.png) no-repeat center center / contain;
+}
+#testimonial .item .avatar {
+	position: absolute;
+	top: -30px;
+	right: 20px;
+	border-radius: 10px;
+	width: 60px;
+}
+#testimonial .item .desc {
+	font-style: italic;
+}
+#testimonial .item .name {
+	font-weight: 700;
+	margin-top: 20px;
+}
+/* =============== PARTNER PAGE =============== */
+#partnerPage .overview {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	border-bottom: 1px solid #eee;
+}
+#partnerPage .overview img {
+	width: 650px;
+	margin-bottom: 40px;
+}
+/* =============== BENEFIT =============== */
+
+/* =============== LAYOUT - FOOTER AREA =============== */
+footer {
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 500;
+}
+/* ============================================================ RESPONSIVE ============================================================ */
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {
+	section .sectionHeading {
+		font-size: 22px;
+	}
+	header .navbar-collapse {
+		position: fixed;
+		width: 100%;
+		height: 100% !important;
+		left: 0;
+		top: 0;
+		text-align: center;
+		background: #fff;
+		transition: height 0s ease !important;
+	}
+	header .navbar-collapse .navbar-toggler {
+		text-align: right;
+		width: 100%;
+		font-size: 30px;
+		padding: 20px;
+	}
+	header .navbar-collapse .navbar-nav:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	#content {
+		padding-top: 70px;
+	}
+	#banner h1 {
+		font-size: 35px;
+	}
+	#banner h2 {
+		font-size: 20px;
+	}
+	#banner img {
+		margin: 40px 0;
+		width: 400px;
+	}
+	#benefit .box {
+		margin-bottom: 20px;
+	}
+	#process img {
+		width: 400px;
+		margin-top: 40px;
+	}
+	#downloadApp .download {
+		padding: 10px;
+	}
+	#testimonial .row > div:last-child {
+		margin-top: 50px;
+	}
+	#partnerPage .overview {
+		font-size: 16px;
+	}
+	#partnerPage .target .hasIcon {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 768px) {	
+	
+}
+@media (max-width: 640px) {
+	body {
+		font-size: 14px;
+	}
+	section {
+		padding: 20px 0;
+	}
+	section .sectionHeading {
+		font-size: 18px;
+	}
+	section .sectionTitle {
+		font-size: 16px;
+	}
+	section.gradient .inner {
+		padding: 30px 20px;
+	}
+	section .title {
+		font-size: 15px;
+	}
+	.table thead th {
+		padding: 15px;
+		font-size: 15px;
+	}
+	#content {
+		padding-top: 50px;
+	}
+	header .navbar {
+		padding: 10px;
+	}
+	header .navbar-brand {
+		font-size: 1.25rem;
+	}
+	#banner {
+		margin: 20px 0 0;
+	}
+	#banner .inner {
+		padding: 20px;
+	}
+	#banner h1 {
+		font-size: 20px;
+	}
+	#banner h2 {
+		font-size: 14px;
+	}
+	#banner img {
+		margin: 20px 0;
+		width: 240px;
+	}
+	#benefit .box {
+		padding: 20px;
+	}
+	#testimonial {
+		padding-top: 50px;
+	}
+	#testimonial .row > div:not(:first-child) {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 480px) {
+	
+}
