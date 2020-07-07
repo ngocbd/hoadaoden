@@ -4,10 +4,9 @@
 `
 curl -sL https://firebase.tools | bash
 `
-### Login to firebase 
-
+### Login to firebase
 `
-### firebase login
+firebase login
 `
 ### move to this project's folder and deploy
 `
